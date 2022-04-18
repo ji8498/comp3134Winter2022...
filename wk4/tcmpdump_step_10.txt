@@ -1,0 +1,9 @@
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+03:12:11.832044 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh > bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca.63811: Flags [P.], seq 2178970181:2178970289, ack 1669138493, win 501, options [nop,nop,TS val 1701373667 ecr 2901939606], length 108
+03:12:11.832197 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh > bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca.63811: Flags [P.], seq 108:252, ack 1, win 501, options [nop,nop,TS val 1701373667 ecr 2901939606], length 144
+03:12:11.832314 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh > bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca.63811: Flags [P.], seq 252:288, ack 1, win 501, options [nop,nop,TS val 1701373668 ecr 2901939606], length 36
+03:12:11.836642 IP bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca.63811 > lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 288, win 2043, options [nop,nop,TS val 2901939615 ecr 1701373668], length 0
+03:12:11.837500 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh > bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca.63811: Flags [P.], seq 288:580, ack 1, win 501, options [nop,nop,TS val 1701373673 ecr 2901939615], length 292
+03:12:11.837686 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh > bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca.63811: Flags [P.], seq 580:616, ack 1, win 501, options [nop,nop,TS val 1701373673 ecr 2901939615], length 36
+03:12:11.837753 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh > bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca.63811: Flags [P.], seq 616:884, ack 1, win 501, options [nop,nop,TS val 1701373673 ecr 2901939615], length 268

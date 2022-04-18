@@ -1,0 +1,23 @@
+root@lamponubuntu2004-s-1vcpu-1gb-tor1-01:~# tcpdump -XX -i eth0
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+02:59:24.378228 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh > bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca.63811: Flags [P.], seq 2169489545:2169489653, ack 1669126865, win 501, options [nop,nop,TS val 1700606214 ecr 2901174617], length 108
+	0x0000:  fe00 0000 0101 9a47 bb56 01ed 0800 4510  .......G.V....E.
+	0x0010:  00a0 e64e 4000 4006 386d 867a 2880 8e70  ...N@.@.8m.z(..p
+	0x0020:  de21 0016 f943 814f c889 637c dad1 8018  .!...C.O..c|....
+	0x0030:  01f5 1c1f 0000 0101 080a 655d 3106 acec  ..........e]1...
+	0x0040:  6959 b162 0ca3 9468 87f0 e48e 9e5c 5ab7  iY.b...h.....\Z.
+	0x0050:  9f76 6304 6e43 07ce 5ae3 5c16 eda2 92c3  .vc.nC..Z.\.....
+	0x0060:  ce7c df92 27a1 1414 fd3a d0a0 9a2d c3f4  .|..'....:...-..
+	0x0070:  1695 b008 137f 2bb4 6d55 1f1a c8e7 b2d4  ......+.mU......
+	0x0080:  2582 2ffd b0f9 e958 47e1 794c 63d8 9b4a  %./....XG.yLc..J
+	0x0090:  7aba e8bd 86df 411c 4465 bea1 93e5 0629  z.....A.De.....)
+	0x00a0:  3c1b e5da e1ff f769 1944 9d36 18c0       <......i.D.6..
+02:59:24.378348 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh > bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca.63811: Flags [P.], seq 108:144, ack 1, win 501, options [nop,nop,TS val 1700606214 ecr 2901174617], length 36
+	0x0000:  fe00 0000 0101 9a47 bb56 01ed 0800 4510  .......G.V....E.
+	0x0010:  0058 e64f 4000 4006 38b4 867a 2880 8e70  .X.O@.@.8..z(..p
+	0x0020:  de21 0016 f943 814f c8f5 637c dad1 8018  .!...C.O..c|....
+	0x0030:  01f5 1bd7 0000 0101 080a 655d 3106 acec  ..........e]1...
+	0x0040:  6959 bb63 1ae4 f3a1 6712 13fb c432 932c  iY.c....g....2.,
+	0x0050:  41f0 ed72 b25e 15eb 907a 3577 9182 73c1  A..r.^...z5w..s.
+	0x0060:  3cf6 4861 4dc3                           <.HaM.

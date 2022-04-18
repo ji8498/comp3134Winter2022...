@@ -1,0 +1,12 @@
+root@lamponubuntu2004-s-1vcpu-1gb-tor1-01:~# tcpdump -i eth0
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+02:53:04.712178 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh > bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca.63811: Flags [P.], seq 2132360589:2132360697, ack 1669097125, win 501, options [nop,nop,TS val 1700226547 ecr 2900800369], length 108
+02:53:04.712419 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh > bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca.63811: Flags [P.], seq 108:252, ack 1, win 501, options [nop,nop,TS val 1700226548 ecr 2900800369], length 144
+02:53:04.712558 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh > bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca.63811: Flags [P.], seq 252:288, ack 1, win 501, options [nop,nop,TS val 1700226548 ecr 2900800369], length 36
+02:53:04.715282 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.57615 > 67.207.67.2.domain: 64476+ [1au] PTR? 33.222.112.142.in-addr.arpa. (56)
+02:53:04.715448 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.57986 > 67.207.67.2.domain: 3430+ [1au] PTR? 33.222.112.142.in-addr.arpa. (56)
+02:53:04.715576 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.41746 > 67.207.67.2.domain: 49119+ [1au] PTR? 33.222.112.142.in-addr.arpa. (56)
+
+
+... ... ...

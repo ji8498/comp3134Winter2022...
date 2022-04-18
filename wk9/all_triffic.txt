@@ -1,0 +1,3 @@
+Write in a text file named all_triffic.txt the command needed to complete the above step.
+
+tcpdump

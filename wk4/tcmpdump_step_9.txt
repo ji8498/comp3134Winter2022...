@@ -1,0 +1,11 @@
+root@lamponubuntu2004-s-1vcpu-1gb-tor1-01:~# tcpdump -i eth0 tcp
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+03:10:06.156697 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh > bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca.63811: Flags [P.], seq 2174996165:2174996273, ack 1669134785, win 501, options [nop,nop,TS val 1701247992 ecr 2901814627], length 108
+03:10:06.156848 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh > bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca.63811: Flags [P.], seq 108:252, ack 1, win 501, options [nop,nop,TS val 1701247992 ecr 2901814627], length 144
+03:10:06.156939 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh > bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca.63811: Flags [P.], seq 252:288, ack 1, win 501, options [nop,nop,TS val 1701247992 ecr 2901814627], length 36
+03:10:06.161528 IP bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca.63811 > lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 288, win 2043, options [nop,nop,TS val 2901814638 ecr 1701247992], length 0
+03:10:06.164192 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh > bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca.63811: Flags [P.], seq 288:580, ack 1, win 501, options [nop,nop,TS val 1701247999 ecr 2901814638], length 292
+03:10:06.164406 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh > bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca.63811: Flags [P.], seq 580:616, ack 1, win 501, options [nop,nop,TS val 1701248000 ecr 2901814638], length 36
+03:10:06.164530 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh > bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca.63811: Flags [P.], seq 616:884, ack 1, win 501, options [nop,nop,TS val 1701248000 ecr 2901814638], length 268
+03:10:06.164619 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh > bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca.63811: Flags [P.], seq 884:920, ack 1, win 501, options [nop,nop,TS val 1701248000 ecr 2901814638], length 36

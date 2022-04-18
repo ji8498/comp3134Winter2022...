@@ -1,0 +1,13 @@
+root@lamponubuntu2004-s-1vcpu-1gb-tor1-01:~# tcpdump -i eth0 dst 134.122.40.128
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+03:21:21.673734 IP bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca.63811 > lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 2179760981, win 2043, options [nop,nop,TS val 2902485424 ecr 1701923505], length 0
+03:21:21.676835 IP 67.207.67.3.domain > lamponubuntu2004-s-1vcpu-1gb-tor1-01.40201: 48039 NXDomain 0/1/1 (123)
+03:21:21.676835 IP 67.207.67.3.domain > lamponubuntu2004-s-1vcpu-1gb-tor1-01.45144: 32050 NXDomain 0/1/1 (123)
+03:21:21.676835 IP 67.207.67.3.domain > lamponubuntu2004-s-1vcpu-1gb-tor1-01.45340: 25830 NXDomain 0/1/1 (123)
+03:21:21.677440 IP 67.207.67.3.domain > lamponubuntu2004-s-1vcpu-1gb-tor1-01.40201: 48039 NXDomain 0/1/0 (112)
+03:21:21.677585 IP 67.207.67.3.domain > lamponubuntu2004-s-1vcpu-1gb-tor1-01.45340: 25830 NXDomain 0/1/0 (112)
+03:21:21.677613 IP 67.207.67.3.domain > lamponubuntu2004-s-1vcpu-1gb-tor1-01.45144: 32050 NXDomain 0/1/0 (112)
+
+
+Nothing was showing so I used my droplet's ip to get this result

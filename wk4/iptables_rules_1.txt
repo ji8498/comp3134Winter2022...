@@ -1,0 +1,47 @@
+root@lamponubuntu2004-s-1vcpu-1gb-tor1-01:~# iptables -L -v
+Chain INPUT (policy DROP 29 packets, 1736 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 2628  218K f2b-sshd   tcp  --  any    any     anywhere             anywhere             multiport dports ssh
+ 6048   14M ufw-before-logging-input  all  --  any    any     anywhere             anywhere            
+ 6048   14M ufw-before-input  all  --  any    any     anywhere             anywhere            
+  158  8745 ufw-after-input  all  --  any    any     anywhere             anywhere            
+  151  8381 ufw-after-logging-input  all  --  any    any     anywhere             anywhere            
+  151  8381 ufw-reject-input  all  --  any    any     anywhere             anywhere            
+  151  8381 ufw-track-input  all  --  any    any     anywhere             anywhere            
+
+Chain FORWARD (policy DROP 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ufw-before-logging-forward  all  --  any    any     anywhere             anywhere            
+    0     0 ufw-before-forward  all  --  any    any     anywhere             anywhere            
+    0     0 ufw-after-forward  all  --  any    any     anywhere             anywhere            
+    0     0 ufw-after-logging-forward  all  --  any    any     anywhere             anywhere            
+    0     0 ufw-reject-forward  all  --  any    any     anywhere             anywhere            
+    0     0 ufw-track-forward  all  --  any    any     anywhere             anywhere            
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 9174  787K ufw-before-logging-output  all  --  any    any     anywhere             anywhere            
+ 9174  787K ufw-before-output  all  --  any    any     anywhere             anywhere            
+ 4742  224K ufw-after-output  all  --  any    any     anywhere             anywhere            
+ 4742  224K ufw-after-logging-output  all  --  any    any     anywhere             anywhere            
+ 4742  224K ufw-reject-output  all  --  any    any     anywhere             anywhere            
+ 4742  224K ufw-track-output  all  --  any    any     anywhere             anywhere            
+
+Chain f2b-sshd (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+   24  1848 REJECT     all  --  any    any     46.101.19.72         anywhere             reject-with icmp-port-unreachable
+   26  1976 REJECT     all  --  any    any     static-47-180-212-134.lsan.ca.frontiernet.net  anywhere             reject-with icmp-port-unreachable
+   27  2028 REJECT     all  --  any    any     19-16-17-134-cloud.mts.by  anywhere             reject-with icmp-port-unreachable
+   16  1412 REJECT     all  --  any    any     112.85.42.88         anywhere             reject-with icmp-port-unreachable
+ 2420  202K RETURN     all  --  any    any     anywhere             anywhere            
+
+Chain ufw-after-forward (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain ufw-after-input (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ufw-skip-to-policy-input  udp  --  any    any     anywhere             anywhere             udp dpt:netbios-ns
+    0     0 ufw-skip-to-policy-input  udp  --  any    any     anywhere             anywhere             udp dpt:netbios-dgm
+    0     0 ufw-skip-to-policy-input  tcp  --  any    any     anywhere             anywhere             tcp dpt:netbios-ssn
+    7   364 ufw-skip-to-policy-input  tcp  --  any    any     anywhere             anywhere             tcp dpt:microsoft-ds
+ 

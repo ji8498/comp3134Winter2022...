@@ -1,0 +1,16 @@
+root@lamponubuntu2004-s-1vcpu-1gb-tor1-01:~# tcpdump -c 10 -i eth0
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+02:56:05.261599 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh > bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca.63811: Flags [P.], seq 2152488297:2152488405, ack 1669111469, win 501, options [nop,nop,TS val 1700407097 ecr 2900977892], length 108
+02:56:05.261814 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh > bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca.63811: Flags [P.], seq 108:144, ack 1, win 501, options [nop,nop,TS val 1700407097 ecr 2900977892], length 36
+02:56:05.261865 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh > bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca.63811: Flags [P.], seq 144:252, ack 1, win 501, options [nop,nop,TS val 1700407097 ecr 2900977892], length 108
+02:56:05.262085 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.ssh > bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca.63811: Flags [P.], seq 252:288, ack 1, win 501, options [nop,nop,TS val 1700407097 ecr 2900977892], length 36
+02:56:05.263724 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.59454 > 67.207.67.2.domain: 13441+ [1au] PTR? 33.222.112.142.in-addr.arpa. (56)
+02:56:05.263931 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.45910 > 67.207.67.2.domain: 46472+ [1au] PTR? 33.222.112.142.in-addr.arpa. (56)
+02:56:05.265061 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.52641 > 67.207.67.2.domain: 64063+ [1au] PTR? 128.40.122.134.in-addr.arpa. (56)
+02:56:05.265286 IP lamponubuntu2004-s-1vcpu-1gb-tor1-01.44495 > 67.207.67.2.domain: 6485+ [1au] PTR? 128.40.122.134.in-addr.arpa. (56)
+02:56:05.265477 IP 67.207.67.2.domain > lamponubuntu2004-s-1vcpu-1gb-tor1-01.45910: 46472 1/0/1 PTR bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca. (125)
+02:56:05.265478 IP 67.207.67.2.domain > lamponubuntu2004-s-1vcpu-1gb-tor1-01.59454: 13441 1/0/1 PTR bras-base-toroon0628w-grc-51-142-112-222-33.dsl.bell.ca. (125)
+10 packets captured
+46 packets received by filter
+9 packets dropped by kernel
